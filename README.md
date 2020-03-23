@@ -12,7 +12,9 @@ The following environment variables need to be configured
 * PORT - port that the server will run on ( default 8090 )
 * DATA_DIR - directory containing the root of the responses ( default ./www/ )
 
-#Docker
+## Docker
+
+The included Docker and docker-compose files allow server to be run easily
 
 docker build . -t mockserver
 docker container run --publish 8090:8090 --detach --name mockserver mockserver:latest
