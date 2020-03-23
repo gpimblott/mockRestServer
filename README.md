@@ -16,5 +16,7 @@ The following environment variables need to be configured
 
 The included Docker and docker-compose files allow server to be run easily
 
-docker build . -t mockserver
-docker container run --publish 8090:8090 --detach --name mockserver mockserver:latest
+```
+ docker build . -t mockserver
+ docker container run --publish 8090:8090 --detach --name mockserver mockserver:latest
+```
