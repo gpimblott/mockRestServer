@@ -67,7 +67,7 @@ environment variable PORT or 8090 if not defined.
 */
 func main() {
 	port := getEnvWithFallback("PORT", "8090")
-	dataPath = getEnvWithFallback( "DATA_DIR" , "./www/")
+	dataPath = getEnvWithFallback("DATA_DIR", "./www/")
 
 	log.Printf("Running server on port %s", port)
 	http.HandleFunc("/", returnFileData)

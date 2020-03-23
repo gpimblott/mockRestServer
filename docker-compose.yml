@@ -1,0 +1,12 @@
+version: '3'
+services:
+  MockServer:
+    build: .
+    container_name: my-mock-server
+    image: mock-server
+    environment:
+      DATA_DIR: /www/
+    volumes:
+    - ./www:/www
+    ports:
+      - "8090:8090"
