@@ -1,5 +1,5 @@
 # MockRestServer
-This is a simple REST server that responds with mock responses based on the requested URI.
+This is a simple REST server that responds with user defined mock responses based on the requested URI.
 
 The server returns the contents of a file located in the directory specified by the environment variable DATA_DIR.  
 For example
