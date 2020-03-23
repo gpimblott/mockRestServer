@@ -69,7 +69,9 @@ func main() {
 	port := getEnvWithFallback("PORT", "8090")
 	dataPath = getEnvWithFallback("DATA_DIR", "./www/")
 
+	log.Printf( "Data path %s", dataPath)
 	log.Printf("Running server on port %s", port)
+
 	http.HandleFunc("/", returnFileData)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
